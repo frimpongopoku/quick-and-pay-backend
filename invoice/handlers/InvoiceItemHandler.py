@@ -18,7 +18,6 @@ class InvoiceItemHandler:
   @staticmethod
   def createNewItem(data, sheet):
     if not data: return TransferResponse(error="Data is empty...")
-    ser = InvoiceItemHandler.serializer(data)
     new_invoice = InvoiceItemHandler.model()
     new_invoice.description = data["description"]
     new_invoice.price = data["price"]

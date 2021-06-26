@@ -4,10 +4,17 @@ from invoice.models import InvoiceSheet, InvoiceItem
 
 
 class InvoiceSheetSerializer(serializers.ModelSerializer):
-  model = InvoiceSheet
-  fields = "__all__"
 
+  class Meta:
+    model = InvoiceSheet
+    fields = "__all__"
+  
+   
+    
 
 class InvoiceItemSerializer(serializers.ModelSerializer):
-  moel = InvoiceItem
-  fields = "__all__"
+
+  class Meta:
+    model = InvoiceItem
+    fields = "__all__"
+

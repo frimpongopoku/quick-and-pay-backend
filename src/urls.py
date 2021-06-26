@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from invoice.views import test_app
+from invoice.views import test_app, send_invoice
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/', test_app),
+    path('invoice.send/',send_invoice)
 ]
