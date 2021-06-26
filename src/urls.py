@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from invoice.views import test_app
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('test/', test_app),
 ]
